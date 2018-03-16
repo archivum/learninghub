@@ -1,0 +1,41 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #f9f9f9;
+}
+
+.logo {
+	/*transform: scale(0.75)*/
+}
+/*tags*/
+.tag {
+	color: #31485f;
+	background: #00c086;
+	border-radius: 100px;
+	font-size: 0.8em;
+	padding: 7.5px 15px;
+	margin: 0px 10px 0px 0px !important;
+	display: inline-block;
+	/*400,500,700,900*/
+	font-weight: 700;
+}
+
+/*split line*/
+.split-line {
+
+padding-top: 10px;
+padding-bottom: 10px;
+/*background-color: yellow;*/
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em;
+    padding: 0;
+}
+
+.content {
+	padding: 20px;
+}
