@@ -1,6 +1,6 @@
 <template>
   <div class="logo center">
-    <img :src="logo">
+    <router-link :to="`/` + name"><img :src="logo"></router-link>
   </div>
 </template>
 
@@ -9,7 +9,8 @@
   export default {
     name: 'hub-logo',
     props: [
-      'logo'
+      'logo',
+      'name'
     ]
   }
 </script>

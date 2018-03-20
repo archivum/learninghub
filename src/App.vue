@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <hub-logo class='logo' :logo="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].logo ? tutorial[$route.path.split(`/`)[1]].logo : ``"/>
-    <hub-header class='header' :title="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].title ? tutorial[$route.path.split(`/`)[1]].title : ``"/>
+    <hub-logo class='logo' :name="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].name ? tutorial[$route.path.split(`/`)[1]].name : ``" :logo="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].logo ? tutorial[$route.path.split(`/`)[1]].logo : ``"/>
+    <hub-header class='header' :title="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].title ? tutorial[$route.path.split(`/`)[1]].title : `Welcome to this learning hub built by CandyDigital`"/>
     <hub-list class='list' :list="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].list ? tutorial[$route.path.split(`/`)[1]].list : []"/>
     <router-view/>
   </div>
