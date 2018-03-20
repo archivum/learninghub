@@ -1,5 +1,5 @@
 <template>
-  <div class="2">
+  <div>
   	<h1>Binding Attributes</h1>
     <p>Relevant Tags:</p>
     <p class='tag'>v-bind:class</p>

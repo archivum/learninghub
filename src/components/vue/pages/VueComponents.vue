@@ -1,8 +1,8 @@
 <template>
-  <div class="7">
-  	<h1>⚠ 7 - Components</h1>
+  <div>
+  	<h1>7 - Components</h1>
     <p>Relevant Tags:</p>
-    <!-- <p class='tag'>!</p> -->
+    <p class='tag'>components</p>
     <div class='split-line'>
       <hr/>
     </div>
@@ -17,7 +17,7 @@
 
     1. Make a new .vue file
 
-    2.1 You can do this by only using a <template> tag
+    2 You can generate a component by only using a <template> tag
 
     COMPONENT PARENT
 
@@ -25,13 +25,13 @@
 
     import ‘yourComponent’ from URL
 
-    3.2 Add it to your parent
+    3.2 Add below to your parent
 
         export default {
 
           components: {
 
-          'NamedCompnent': yourComponent
+          'NamedComponent': yourComponent
 
           }
 

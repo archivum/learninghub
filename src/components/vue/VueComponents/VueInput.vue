@@ -1,17 +1,5 @@
 <template>
   <div>
-  	<input type="text" v-model='message'>
-	<p>{{message}}</p>
+	<p>I am the 'Input' CHILD input component</p>
   </div>
 </template>
-
-<script>
-export default {
-
- data() {
-    return {
-    	message: ''
-}
-}
-}
-</script>

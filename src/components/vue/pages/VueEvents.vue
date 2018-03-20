@@ -2,7 +2,8 @@
   <div class="10">
   	<h1>Events</h1>
     <p>Relevant Tags:</p>
-    <p class='tag'>!</p>
+    <p class='tag'>components</p>
+    <p class='tag'>events</p>
     <div class='split-line'>
     <hr/>
     </div>

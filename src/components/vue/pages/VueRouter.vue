@@ -8,6 +8,20 @@
     </div>
     <!-- PROJECT START -->
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <VueRouterLink></VueRouterLink>
   </div>
 </template>
 
+<script>
+
+import VueRouterLink from '@/components/vue/VueRouter/VueRouterLink.vue'
+
+export default {
+
+components: {
+  'VueRouterLink': VueRouterLink
+}
+
+}
+
+</script>

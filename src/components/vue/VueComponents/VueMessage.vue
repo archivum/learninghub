@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Here's an awesome message!</p>
+    <p>I am the 'Message' PARENT component</p>
     <app-input></app-input>
   </div>
 </template>

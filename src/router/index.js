@@ -9,7 +9,10 @@ import VueLists from '@/components/vue/pages/VueLists'
 import VueComponents from '@/components/vue/pages/VueComponents'
 import VueProps from '@/components/vue/pages/VueProps'
 import VueRouter from '@/components/vue/pages/VueRouter'
+import VueRouterLink from '@/components/vue/VueRouter/VueRouterLink'
 import VueEvents from '@/components/vue/pages/VueEvents'
+import VueRouterHome from '@/components/vue/VueRouter/VueRouterHome'
+import VueRouterUsers from '@/components/vue/VueRouter/VueRouterUsers'
 
 Vue.use(Router)
 
@@ -56,9 +59,27 @@ export default new Router({
       component: VueProps
     },
     {
-      path: '/9',
+      path: '/9/:id',
       name: 'VueRouter',
-      component: VueRouter
+      component: VueRouter,
+      children: [ 
+      {
+        path:'',
+        component: VueRouter
+      },
+      {
+
+        path: '/home',
+        // name: 'VueRouterHome',
+        component: VueRouterHome
+      },
+      {
+
+        path: '/users',
+        // name: 'VueRouterUsers',
+        component: VueRouterUsers
+      }
+      ]
     },
     {
       path: '/10',
