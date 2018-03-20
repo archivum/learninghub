@@ -16,52 +16,52 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/vue/click',
       name: 'VueClick',
       component: VueClick
     },
     {
-      path: '/2',
+      path: '/vue/bind',
       name: 'VueBinding',
       component: VueBinding
   	},
     {
-      path: '/3',
+      path: '/vue/computed',
       name: 'VueComputed',
       component: VueComputed
     },
     {
-      path: '/4',
+      path: '/vue/conditions',
       name: 'VueConditions',
       component: VueConditions
     },
     {
-      path: '/5',
+      path: '/vue/filters',
       name: 'VueFilters',
       component: VueFilters
     },
     {
-      path: '/6',
+      path: '/vue/filters',
       name: 'VueLists',
       component: VueLists
     },
     {
-      path: '/7',
+      path: '/vue/components',
       name: 'VueComponents',
       component: VueComponents
     },
     {
-      path: '/8',
+      path: '/vue/props',
       name: 'VueProps',
       component: VueProps
     },
     {
-      path: '/9',
+      path: '/vue/router',
       name: 'VueRouter',
       component: VueRouter
     },
     {
-      path: '/10',
+      path: '/vue/events',
       name: 'VueEvents',
       component: VueEvents
     }

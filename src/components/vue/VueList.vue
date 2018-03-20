@@ -2,16 +2,16 @@
   <div class="container list">
     <div class='nav'>
     <ul>
-      <li><router-link to='/'>1 - Learning the Basics</router-link></li>
-      <li><router-link to='/2'>2 - Binding Attributes</router-link></li>
-      <li><router-link to='/3'>3 - Computed Properties</router-link></li>
-      <li><router-link to='/4'>4 - Conditionals</router-link></li>
-      <li><router-link to='/5'>5 - Filters</router-link></li>
-      <li><router-link to='/6'>6 - Lists</router-link></li>
-      <li><router-link to='/7'>7 - Components </router-link></li>
-      <li><router-link to='/8'>8 - Props</router-link></li>
-      <li><router-link to='/9'>9 - Vue Router</router-link></li>
-      <li><router-link to='/10'>10 - Events</router-link></li>
+      <li><router-link to='/vue/click'>1 - Learning the Basics</router-link></li>
+      <li><router-link to='/vue/bind'>2 - Binding Attributes</router-link></li>
+      <li><router-link to='/vue/computed'>3 - Computed Properties</router-link></li>
+      <li><router-link to='/vue/conditions'>4 - Conditionals</router-link></li>
+      <li><router-link to='/vue/filters'>5 - Filters</router-link></li>
+      <li><router-link to='/vue/filters'>6 - Lists</router-link></li>
+      <li><router-link to='/vue/components'>7 - Components </router-link></li>
+      <li><router-link to='/vue/props'>8 - Props</router-link></li>
+      <li><router-link to='/vue/router'>9 - Vue Router</router-link></li>
+      <li><router-link to='/vue/events'>10 - Events</router-link></li>
     </ul>
     </div>
   </div>
