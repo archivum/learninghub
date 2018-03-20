@@ -1,26 +1,26 @@
 <template>
   <div class="wrapper">
-    <vue-logo class='logo'/>
-    <vue-header class='header'/>
-    <vue-list class='list'/>
+    <hub-logo class='logo'/>
+    <hub-header class='header'/>
+    <hub-list class='list'/>
     <router-view/>
   </div>
 </template>
 
 <script>
   // Logo
-  import VueLogo from '@/components/vue/VueLogo'
+  import HubLogo from '@/components/HubLogo'
   // Header
-  import VueHeader from '@/components/vue/VueHeader'
+  import HubHeader from '@/components/HubHeader'
   // List / Menu
-  import VueList from '@/components/vue/VueList'
+  import HubList from '@/components/HubList'
 
 export default {
   name: 'App',
   components: {
-    VueLogo,
-    VueHeader,
-    VueList
+    HubLogo,
+    HubHeader,
+    HubList
   }
 }
 </script>
