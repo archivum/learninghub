@@ -11,9 +11,12 @@
 <script>
   export default {
     name: 'hub-list',
-    props: [
-      'list'
-    ]
+    props: {
+      list: {
+        type: Array,
+        required: true
+      }
+    }
   }
 </script>
 

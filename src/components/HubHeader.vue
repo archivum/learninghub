@@ -11,9 +11,12 @@
 <script>
   export default {
     name:'hub-header',
-    props: [
-      'title'
-    ]
+    props: {
+      title: {
+        type: String,
+        required: true
+      }
+    }
   }
 </script>
 

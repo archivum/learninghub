@@ -7,10 +7,15 @@
 <script>
   export default {
     name: 'hub-logo',
-    props: [
-      'logo',
-      'name'
-    ],
+    props: {
+      logo: {
+        type: String,
+        required: true
+      },
+      name: {
+        type: String
+      }
+    },
     computed: {
       logoFct () {
         return require('../assets/' + this.logo)
