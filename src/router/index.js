@@ -13,6 +13,8 @@ import VueLists from '@/components/vue/pages/VueLists'
 import VueComponents from '@/components/vue/pages/VueComponents'
 import VueProps from '@/components/vue/pages/VueProps'
 import VueRouter from '@/components/vue/pages/VueRouter'
+import VueRouterHome from '@/components/vue/VueRouter/VueRouterHome'
+import VueRouterUsers from '@/components/vue/VueRouter/VueRouterUsers'
 import VueEvents from '@/components/vue/pages/VueEvents'
 
 /*** Vue ***/
@@ -25,7 +27,6 @@ import NotFound from '@/components/notfound/pages/NotFound'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '/',
@@ -81,7 +82,19 @@ export default new Router({
     {
       path: '/vue/router',
       name: 'VueRouter',
-      component: VueRouter
+      component: VueRouter,
+      children: [
+        {
+          path: "home",
+          //name: "VueRouterHome",
+          component: VueRouterHome
+        },
+        {
+          path: "users",
+          // name: 'VueRouterUsers',
+          component: VueRouterUsers
+        }
+      ]
     },
     {
       path: '/vue/events',
