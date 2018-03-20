@@ -1,7 +1,7 @@
 <template>
   <div class="container list">
     <div class='nav'>
-    <ul>
+    <ul v-if="list.length > 0">
       <li><router-link v-for="item in list" :key="item" :to='item.url'>{{ item.label }}<br/></router-link></li>
     </ul>
     </div>
