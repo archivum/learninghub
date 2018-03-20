@@ -18,6 +18,10 @@ import VueEvents from '@/components/vue/pages/VueEvents'
 /*** Vue ***/
 import ReactLanding from '@/components/react/pages/ReactLanding'
 
+
+/*** 404 ***/
+import NotFound from '@/components/notfound/pages/NotFound'
+
 Vue.use(Router)
 
 export default new Router({
@@ -89,6 +93,12 @@ export default new Router({
       path: '/react',
       name: 'ReactLanding',
       component: ReactLanding
+    },
+    /*** 404 ***/
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
