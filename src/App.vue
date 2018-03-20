@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <hub-logo class='logo' :name="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].name ? tutorial[$route.path.split(`/`)[1]].name : ``" :logo="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].logo ? tutorial[$route.path.split(`/`)[1]].logo : ``"/>
+    <hub-logo class='logo' :name="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].name ? tutorial[$route.path.split(`/`)[1]].name : ``" :logo="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].logo ? tutorial[$route.path.split(`/`)[1]].logo : `cd-logo.png`"/>
     <hub-header class='header' :title="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].title ? tutorial[$route.path.split(`/`)[1]].title : `Welcome to this learning hub built by CandyDigital`"/>
     <hub-list class='list' :list="$route.path.split(`/`)[1] !== undefined &&  tutorial[$route.path.split(`/`)[1]] !==undefined && tutorial[$route.path.split(`/`)[1]].list ? tutorial[$route.path.split(`/`)[1]].list : []"/>
     <router-view/>
@@ -39,7 +39,7 @@ export default {
             {url: '/vue/router', label: '9 - Vue Router'},
             {url: '/vue/events', label: '10 - Events'},
           ],
-          logo: '@/assets/vue-logo.png',
+          logo: 'vue-logo.png',
           title: 'Learning VUE one component at a time.'
         },
         react: {
@@ -56,7 +56,7 @@ export default {
             {url: '/react/9', label: '9'},
             {url: '/react/10', label: '10'},
           ],
-          logo: '@/assets/react-logo.png',
+          logo: 'react-logo.png',
           title: 'Learning REACT one component at a time.'
         }
       }

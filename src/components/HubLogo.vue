@@ -1,17 +1,21 @@
 <template>
   <div class="logo center">
-    <router-link :to="`/` + name"><img :src="logo"></router-link>
+    <router-link :to="`/` + name"><img class="logo" :src="logoFct"></router-link>
   </div>
 </template>
 
 <script>
-  //TODO fix logo component
   export default {
     name: 'hub-logo',
     props: [
       'logo',
       'name'
-    ]
+    ],
+    computed: {
+      logoFct () {
+        return require('../assets/' + this.logo)
+      }
+    }
   }
 </script>
 
@@ -21,5 +25,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo {
+  height: 100px;
 }
 </style>
