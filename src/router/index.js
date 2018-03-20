@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Landing from '@/components/Landing'
 import VueClick from '@/components/vue/pages/VueClick'
 import VueBinding from '@/components/vue/pages/VueBinding'
 import VueComputed from '@/components/vue/pages/VueComputed'
@@ -15,6 +16,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'Landing',
+      component: Landing
+    },
     {
       path: '/vue/click',
       name: 'VueClick',
