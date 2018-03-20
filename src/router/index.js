@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/components/Landing'
+
+/*** Vue ***/
+import VueLanding from '@/components/vue/pages/VueLanding'
 import VueClick from '@/components/vue/pages/VueClick'
 import VueBinding from '@/components/vue/pages/VueBinding'
 import VueComputed from '@/components/vue/pages/VueComputed'
@@ -12,6 +15,9 @@ import VueProps from '@/components/vue/pages/VueProps'
 import VueRouter from '@/components/vue/pages/VueRouter'
 import VueEvents from '@/components/vue/pages/VueEvents'
 
+/*** Vue ***/
+import ReactLanding from '@/components/react/pages/ReactLanding'
+
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +27,12 @@ export default new Router({
       path: '/',
       name: 'Landing',
       component: Landing
+    },
+    /*** Vue ***/
+    {
+      path: '/vue',
+      name: 'VueLanding',
+      component: VueLanding
     },
     {
       path: '/vue/click',
@@ -71,6 +83,12 @@ export default new Router({
       path: '/vue/events',
       name: 'VueEvents',
       component: VueEvents
+    },
+    /*** React ***/
+    {
+      path: '/react',
+      name: 'ReactLanding',
+      component: ReactLanding
     }
   ]
 })

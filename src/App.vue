@@ -41,6 +41,23 @@ export default {
           ],
           logo: '@/assets/vue-logo.png',
           title: 'Learning VUE one component at a time.'
+        },
+        react: {
+          name: 'react',
+          list: [
+            {url: '/react/1', label: '1'},
+            {url: '/react/2', label: '2'},
+            {url: '/react/3', label: '3'},
+            {url: '/react/4', label: '4'},
+            {url: '/react/5', label: '5'},
+            {url: '/react/6', label: '6'},
+            {url: '/react/7', label: '7'},
+            {url: '/react/8', label: '8'},
+            {url: '/react/9', label: '9'},
+            {url: '/react/10', label: '10'},
+          ],
+          logo: '@/assets/react-logo.png',
+          title: 'Learning REACT one component at a time.'
         }
       }
     }

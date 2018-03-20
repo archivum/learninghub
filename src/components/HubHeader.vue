@@ -1,5 +1,9 @@
 <template>
   <div class="wrapper">
+    <div class="nav">
+      <router-link to="/vue">Vue</router-link>
+      <router-link to="/react">React</router-link>
+    </div>
   	<div class='text'>{{ title }}</div>
   </div>
 </template>
