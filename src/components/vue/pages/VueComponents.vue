@@ -33,7 +33,7 @@
 
           'NamedCompnent': yourComponent
 
-          } 
+          }
 
         }
 
@@ -41,18 +41,18 @@
 
     -->
 
-    <app-message></app-message>
+    <message-renamed/>
   </div>
 </template>
 
 <script>
 
-import Message from './Prj7-message.vue'
+import VueMessage from '@/components/vue/VueComponents/VueMessage.vue'
 
 export default {
 
 components: {
-  'app-message': Message
+  'message-renamed': VueMessage //The components that are imported can be renamed here
 }
 
 }

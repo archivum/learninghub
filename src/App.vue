@@ -9,11 +9,11 @@
 
 <script>
   // Logo
-  import VueLogo from '@/components/VueLogo'
+  import VueLogo from '@/components/vue/VueLogo'
   // Header
-  import VueHeader from '@/components/VueHeader'
+  import VueHeader from '@/components/vue/VueHeader'
   // List / Menu
-  import VueList from '@/components/VueList'
+  import VueList from '@/components/vue/VueList'
 
 export default {
   name: 'App',

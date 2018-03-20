@@ -9,8 +9,8 @@
 
 
 <script>
-  
-import Flea from './Prj8-Flea.vue'
+
+import Flea from './VueFlea.vue'
 
 export default {
   // going to be importing the following props
@@ -20,7 +20,7 @@ export default {
   // going to import the following component
   components: {
   'Flea': Flea
-  }, 
+  },
 data() {
   return {
   fmessage: 'Sending props into Flea'

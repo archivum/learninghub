@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  
-import Employee from './Prj10-Employee.vue'
+
+import Employee from './VueEmployee.vue'
 
 export default {
 // Sets data for what dynamic content we want to update
@@ -25,7 +25,7 @@ export default {
   	updateTitle(updatedTitle){
   		this.title = updatedTitle
   	}
-  } 
+  }
 }
 
 </script>

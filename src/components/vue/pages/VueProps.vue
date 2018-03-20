@@ -9,13 +9,13 @@
     </div>
     <!-- PROJECT START -->
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <Luna :lmsg='message'></Luna>
+    <vue-luna :lmsg='message'/>
   </div>
 </template>
 
 <script>
-  
-import Luna from './Prj8-Luna.vue'
+
+import VueLuna from '@/components/vue/VueProps/VueLuna.vue'
 
 export default {
 
@@ -32,14 +32,14 @@ message: 'Sending props into Luna'
 
   components: {
 
-  'Luna': Luna
+  VueLuna
 
-  } 
+  }
 
 }
 
 </script>
-<!-- 
+<!--
 1.1
 
 In order to pass props you first begin by defining the prop in the data() section, in this case use 'message'

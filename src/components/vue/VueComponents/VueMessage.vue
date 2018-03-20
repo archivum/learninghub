@@ -7,7 +7,7 @@
 
 <script>
 
-import input from './Prj7-input.vue'
+import input from './VueInput.vue'
 
 export default {
 
