@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-    <hub-logo class='logo'/>
-    <hub-header class='header'/>
-    <hub-list class='list'/>
+    <hub-logo class='logo' :logo="tutorial[$route.path.split(`/`)[1]].logo"/>
+    <hub-header class='header' :title="tutorial[$route.path.split(`/`)[1]].title"/>
+    <hub-list class='list' :list="tutorial[$route.path.split(`/`)[1]].list"/>
     <router-view/>
   </div>
 </template>
@@ -21,6 +21,29 @@ export default {
     HubLogo,
     HubHeader,
     HubList
+  },
+  data() {
+    return {
+      tutorial: {
+        vue: {
+          name: 'vue',
+          list: [
+            {url: '/vue/click', label: '1 - Learning the Basics'},
+            {url: '/vue/bind', label: '2 - Binding Attributes'},
+            {url: '/vue/computed', label: '3 - Computed Properties'},
+            {url: '/vue/conditions', label: '4 - Conditionals'},
+            {url: '/vue/filters', label: '5 - Filters'},
+            {url: '/vue/lists', label: '6 - Lists'},
+            {url: '/vue/components', label: '7 - Components'},
+            {url: '/vue/props', label: '8 - Props'},
+            {url: '/vue/router', label: '9 - Vue Router'},
+            {url: '/vue/events', label: '10 - Events'},
+          ],
+          logo: '@/assets/vue-logo.png',
+          title: 'Learning VUE one component at a time.'
+        }
+      }
+    }
   }
 }
 </script>

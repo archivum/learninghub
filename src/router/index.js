@@ -15,6 +15,7 @@ import VueEvents from '@/components/vue/pages/VueEvents'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -47,7 +48,7 @@ export default new Router({
       component: VueFilters
     },
     {
-      path: '/vue/filters',
+      path: '/vue/lists',
       name: 'VueLists',
       component: VueLists
     },
