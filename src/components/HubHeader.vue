@@ -1,8 +1,21 @@
 <template>
   <div class="wrapper">
-  	<div class='text'>Learning VUE one component at a time.</div>
+    <div class="nav">
+      <router-link to="/vue">Vue</router-link>
+      <router-link to="/react">React</router-link>
+    </div>
+  	<div class='text'>{{ title }}</div>
   </div>
 </template>
+
+<script>
+  export default {
+    name:'hub-header',
+    props: [
+      'title'
+    ]
+  }
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

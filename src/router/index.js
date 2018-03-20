@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Landing from '@/components/Landing'
+
+/*** Vue ***/
+import VueLanding from '@/components/vue/pages/VueLanding'
 import VueClick from '@/components/vue/pages/VueClick'
 import VueBinding from '@/components/vue/pages/VueBinding'
 import VueComputed from '@/components/vue/pages/VueComputed'
@@ -9,76 +13,92 @@ import VueLists from '@/components/vue/pages/VueLists'
 import VueComponents from '@/components/vue/pages/VueComponents'
 import VueProps from '@/components/vue/pages/VueProps'
 import VueRouter from '@/components/vue/pages/VueRouter'
-import VueRouterLink from '@/components/vue/VueRouter/VueRouterLink'
 import VueEvents from '@/components/vue/pages/VueEvents'
-import VueRouterHome from '@/components/vue/VueRouter/VueRouterHome'
-import VueRouterUsers from '@/components/vue/VueRouter/VueRouterUsers'
+
+/*** Vue ***/
+import ReactLanding from '@/components/react/pages/ReactLanding'
+
+
+/*** 404 ***/
+import NotFound from '@/components/notfound/pages/NotFound'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
-      path: "/",
-      name: "VueClick",
+      path: '/',
+      name: 'Landing',
+      component: Landing
+    },
+    /*** Vue ***/
+    {
+      path: '/vue',
+      name: 'VueLanding',
+      component: VueLanding
+    },
+    {
+      path: '/vue/click',
+      name: 'VueClick',
       component: VueClick
     },
     {
-      path: "/2",
-      name: "VueBinding",
+      path: '/vue/bind',
+      name: 'VueBinding',
       component: VueBinding
-    },
+  	},
     {
-      path: "/3",
-      name: "VueComputed",
+      path: '/vue/computed',
+      name: 'VueComputed',
       component: VueComputed
     },
     {
-      path: "/4",
-      name: "VueConditions",
+      path: '/vue/conditions',
+      name: 'VueConditions',
       component: VueConditions
     },
     {
-      path: "/5",
-      name: "VueFilters",
+      path: '/vue/filters',
+      name: 'VueFilters',
       component: VueFilters
     },
     {
-      path: "/6",
-      name: "VueLists",
+      path: '/vue/lists',
+      name: 'VueLists',
       component: VueLists
     },
     {
-      path: "/7",
-      name: "VueComponents",
+      path: '/vue/components',
+      name: 'VueComponents',
       component: VueComponents
     },
     {
-      path: "/8",
-      name: "VueProps",
+      path: '/vue/props',
+      name: 'VueProps',
       component: VueProps
     },
     {
-      path: '/9/',
+      path: '/vue/router',
       name: 'VueRouter',
-      component: VueRouter,
-      children: [
-        {
-          path: "home",
-          //name: "VueRouterHome",
-          component: VueRouterHome
-        },
-        {
-          path: "users",
-          // name: 'VueRouterUsers',
-          component: VueRouterUsers
-        }
-      ]
+      component: VueRouter
     },
     {
-      path: "/10",
-      name: "VueEvents",
+      path: '/vue/events',
+      name: 'VueEvents',
       component: VueEvents
+    },
+    /*** React ***/
+    {
+      path: '/react',
+      name: 'ReactLanding',
+      component: ReactLanding
+    },
+    /*** 404 ***/
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
-});
+})
