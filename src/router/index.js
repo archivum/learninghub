@@ -19,72 +19,66 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'VueClick',
+      path: "/",
+      name: "VueClick",
       component: VueClick
     },
     {
-      path: '/2',
-      name: 'VueBinding',
+      path: "/2",
+      name: "VueBinding",
       component: VueBinding
-  	},
+    },
     {
-      path: '/3',
-      name: 'VueComputed',
+      path: "/3",
+      name: "VueComputed",
       component: VueComputed
     },
     {
-      path: '/4',
-      name: 'VueConditions',
+      path: "/4",
+      name: "VueConditions",
       component: VueConditions
     },
     {
-      path: '/5',
-      name: 'VueFilters',
+      path: "/5",
+      name: "VueFilters",
       component: VueFilters
     },
     {
-      path: '/6',
-      name: 'VueLists',
+      path: "/6",
+      name: "VueLists",
       component: VueLists
     },
     {
-      path: '/7',
-      name: 'VueComponents',
+      path: "/7",
+      name: "VueComponents",
       component: VueComponents
     },
     {
-      path: '/8',
-      name: 'VueProps',
+      path: "/8",
+      name: "VueProps",
       component: VueProps
     },
     {
-      path: '/9/:id',
+      path: '/9/',
       name: 'VueRouter',
       component: VueRouter,
-      children: [ 
-      {
-        path:'',
-        component: VueRouter
-      },
-      {
-
-        path: '/home',
-        // name: 'VueRouterHome',
-        component: VueRouterHome
-      },
-      {
-
-        path: '/users',
-        // name: 'VueRouterUsers',
-        component: VueRouterUsers
-      }
+      children: [
+        {
+          path: "home",
+          //name: "VueRouterHome",
+          component: VueRouterHome
+        },
+        {
+          path: "users",
+          // name: 'VueRouterUsers',
+          component: VueRouterUsers
+        }
       ]
     },
     {
-      path: '/10',
-      name: 'VueEvents',
+      path: "/10",
+      name: "VueEvents",
       component: VueEvents
     }
   ]
-})
+});
