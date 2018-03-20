@@ -1,15 +1,27 @@
 <template>
   <div class="wrapper">
-    <Logo class='logo'></Logo>
-    <Header class='header'></Header>
-    <List class='list'></List>
+    <vue-logo class='logo'/>
+    <vue-header class='header'/>
+    <vue-list class='list'/>
     <router-view/>
   </div>
 </template>
 
 <script>
+  // Logo
+  import VueLogo from '@/components/VueLogo'
+  // Header
+  import VueHeader from '@/components/VueHeader'
+  // List / Menu
+  import VueList from '@/components/VueList'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    VueLogo,
+    VueHeader,
+    VueList
+  }
 }
 </script>
 
@@ -39,10 +51,10 @@ background: green;
 }
 
 @media screen and (max-width: 760px) {
-  
+
  .wrapper {
   grid-template-columns: 1fr;
-} 
+}
 
 }
 
