@@ -21,6 +21,7 @@ import VueEvents from '@/components/vue/pages/VueEvents'
 import ReactLanding from '@/components/react/pages/ReactLanding'
 
 
+
 /*** 404 ***/
 import NotFound from '@/components/notfound/pages/NotFound'
 
@@ -28,78 +29,72 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Landing',
-      component: Landing
-    },
-    /*** Vue ***/
-    {
-      path: '/vue',
+      {
+        path: '/',
+        name: 'Landing',
+        component: Landing
+      },
+      {
+      path: '/vue/',
       name: 'VueLanding',
-      component: VueLanding
-    },
-    {
-      path: '/vue/click',
-      name: 'VueClick',
-      component: VueClick
-    },
-    {
-      path: '/vue/bind',
-      name: 'VueBinding',
-      component: VueBinding
-  	},
-    {
-      path: '/vue/computed',
-      name: 'VueComputed',
-      component: VueComputed
-    },
-    {
-      path: '/vue/conditions',
-      name: 'VueConditions',
-      component: VueConditions
-    },
-    {
-      path: '/vue/filters',
-      name: 'VueFilters',
-      component: VueFilters
-    },
-    {
-      path: '/vue/lists',
-      name: 'VueLists',
-      component: VueLists
-    },
-    {
-      path: '/vue/components',
-      name: 'VueComponents',
-      component: VueComponents
-    },
-    {
-      path: '/vue/props',
-      name: 'VueProps',
-      component: VueProps
-    },
-    {
-      path: '/vue/router',
-      name: 'VueRouter',
-      component: VueRouter,
+      component: VueLanding,
       children: [
-        {
-          path: "home",
-          //name: "VueRouterHome",
-          component: VueRouterHome
+         {
+          path: 'click',
+          name: 'VueClick',
+          component: VueClick
+        }, {
+          path: 'bind',
+          name: 'VueBinding',
+          component: VueBinding
+        }, {
+          path: 'computed',
+          name: 'VueComputed',
+          component: VueComputed
+        }, {
+          path: 'conditions',
+          name: 'VueConditions',
+          component: VueConditions
+        }, {
+          path: 'filters',
+          name: 'VueFilters',
+          component: VueFilters
+        }, {
+          path: 'lists',
+          name: 'VueLists',
+          component: VueLists
+        }, {
+          path: 'components',
+          name: 'VueComponents',
+          component: VueComponents
+        }, {
+          path: 'props',
+          name: 'VueProps',
+          component: VueProps
         },
         {
-          path: "users",
-          // name: 'VueRouterUsers',
-          component: VueRouterUsers
-        }
+          path: 'events',
+          name: 'VueEvents',
+          component: VueEvents
+        },
+        {
+        path: '/routing/',
+        name: 'VueRouter',
+        component: VueRouter,
+        children: [
+          {
+            path: "home",
+            //name: "VueRouterHome",
+            component: VueRouterHome
+          },
+          {
+            path: "users",
+            // name: 'VueRouterUsers',
+            component: VueRouterUsers
+          }
+        ]
+      },
       ]
-    },
-    {
-      path: '/vue/events',
-      name: 'VueEvents',
-      component: VueEvents
     },
     /*** React ***/
     {
