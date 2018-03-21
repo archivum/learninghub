@@ -1,5 +1,8 @@
 <template>
+<div>
   <p>Vue Landing Page</p>
+  <router-view></router-view>
+</div>
 </template>
 
 <script>
