@@ -78,7 +78,7 @@ export default new Router({
           component: VueEvents
         },
         {
-        path: '/routing/',
+        path: 'router',
         name: 'VueRouter',
         component: VueRouter,
         children: [
