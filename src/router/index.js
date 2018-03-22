@@ -29,15 +29,15 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'Landing',
+      component: Landing,
+    },
       {
-        path: '/',
-        name: 'Landing',
-        component: Landing
-      },
-      {
-      path: '/vue/',
-      name: 'VueLanding',
-      component: VueLanding,
+      path: '/:framework',
+      name: 'FrameworkLanding',
+      component: Landing,
       children: [
          {
           path: 'click',
@@ -96,12 +96,12 @@ export default new Router({
       },
       ]
     },
-    /*** React ***/
-    {
-      path: '/react',
-      name: 'ReactLanding',
-      component: ReactLanding
-    },
+    // /*** React ***/
+    // {
+    //   path: '/react',
+    //   name: 'ReactLanding',
+    //   component: ReactLanding
+    // },
     /*** 404 ***/
     {
       path: '*',
