@@ -25,6 +25,14 @@ export default {
   data() {
     return {
       tutorial: {
+         css: {
+          name: 'css',
+          list: [
+            {url: '/css/cssgrid', label: 'css - grid'},
+          ],
+          logo: 'vue-logo.png',
+          title: 'CSS one at a time.'
+        },       
         vue: {
           name: 'vue',
           list: [

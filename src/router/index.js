@@ -17,9 +17,11 @@ import VueRouterHome from '@/components/vue/VueRouter/VueRouterHome'
 import VueRouterUsers from '@/components/vue/VueRouter/VueRouterUsers'
 import VueEvents from '@/components/vue/pages/VueEvents'
 
-/*** Vue ***/
+/*** React ***/
 import ReactLanding from '@/components/react/pages/ReactLanding'
 
+/*** css ***/
+import CssGrid from '@/components/css/pages/CssGrid'
 
 
 /*** 404 ***/
@@ -39,6 +41,11 @@ export default new Router({
       name: 'FrameworkLanding',
       component: Landing,
       children: [
+         {
+          path: 'cssgrid',
+          name: 'CssGrid',
+          component: CssGrid
+        },
          {
           path: 'click',
           name: 'VueClick',
@@ -96,12 +103,6 @@ export default new Router({
       },
       ]
     },
-    // /*** React ***/
-    // {
-    //   path: '/react',
-    //   name: 'ReactLanding',
-    //   component: ReactLanding
-    // },
     /*** 404 ***/
     {
       path: '*',
