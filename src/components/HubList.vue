@@ -27,7 +27,7 @@ ul {
   padding: 0;
       display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 li {
   /*display: inline-block;*/

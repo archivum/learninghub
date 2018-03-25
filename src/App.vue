@@ -32,7 +32,7 @@ export default {
           ],
           logo: 'vue-logo.png',
           title: 'CSS one at a time.'
-        },       
+        },
         vue: {
           name: 'vue',
           list: [
@@ -75,6 +75,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 
 .wrapper {
   display: grid;
