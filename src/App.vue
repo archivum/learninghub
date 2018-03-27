@@ -30,7 +30,7 @@ export default {
           list: [
             {url: '/css/cssgrid', label: 'css - grid'},
           ],
-          logo: 'vue-logo.png',
+          logo: 'grid-logo.png',
           title: 'CSS one at a time.'
         },
         vue: {

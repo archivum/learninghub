@@ -18,7 +18,7 @@
     },
     computed: {
       logoFct () {
-        return require('../assets/' + this.logo)
+        return require('../assets/logos/' + this.logo)
       }
     }
   }
